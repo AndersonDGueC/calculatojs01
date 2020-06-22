@@ -37,18 +37,22 @@ body{
   //  ##{$num}{ grid-area: md#{$key};}
 //}   
 #display{
-   background-color:red;
+    unicode-bidi: bidi-override;
+   direction: rtl
  
 }
- #display input{
+ #display #input1{
      width: 240px;
      height: 30px;
  }
- #display p{
+ #display #input2{
+    
+    width: 240px;
      height: 30px;
      background-color: black;
      color: white;
      margin: 0px;
+     border:none;
  }
 .boton{
     
@@ -67,14 +71,14 @@ width: 77px;
     
     
 }
-#clear, #equal{
+#clear, #equals{
     width: 115px;
 }
 #clear{
     margin-right: 0;
     padding-right: 0;
 }
-#equal{
+#equals{
     margin-left: 0;
     padding-left: 0;;
 }

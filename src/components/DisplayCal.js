@@ -1,10 +1,11 @@
 import React from 'react'
 
-const DisplayCal =()=>{
+const DisplayCal =({val, valdisplay})=>{
     return(
         <div id="display">
-             <p></p>
-            <input disabled/>
+             <input id="input2" value={valdisplay} disabled/>
+            <input id="input1" value={val} disabled/>
+    
            
         </div>
     )
